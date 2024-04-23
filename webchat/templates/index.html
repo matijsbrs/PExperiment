@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web chat</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var socket = io('http://192.168.2.61:5000');
+            var username = $('#username');
+            var message = $('#message');
+            var sendBtn = $('#sendBtn');
+            var messages = $('#messages');
+
+           socket.on('connect', function() {
+               console.log('Connected to server');
+              });
+
+            socket.on('message', function(data) {
+                $('#messages').append(data + '<br>');
+            });
+
+            $('#sendBtn').on('click', function() {
+                socket.send($('#username').val()+ ': ' + $('#message').val());
+                $('#message').val('');
+            });
+        });
+    </script>
+
+    <header>
+        <h1>Webchat test</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>About Me</h2>
+        <p>This is a paragraph about me and my website.</p>
+
+        <div id="messages">
+
+        </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button id="sendBtn">Send</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
