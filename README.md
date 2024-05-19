@@ -8,3 +8,8 @@ An attempt to build a web based chat client using python and in the future inclu
 ## jake
 
 the start of a multi modal ai assistant.
+
+## ChromaDB
+
+Me starting to learn ChromaDB
+

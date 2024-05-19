@@ -1,0 +1,1000 @@
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  11:                       llama.rope.freq_base f32              = 10000.000000
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  12:                          general.file_type u32              = 15
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,32064]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  15:                      tokenizer.ggml.scores arr[f32,32064]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  16:                  tokenizer.ggml.token_type arr[i32,32064]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 32000
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  20:            tokenizer.ggml.padding_token_id u32              = 32000
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - type q4_K:  193 tensors
+May 13 06:16:15 jake ollama[684]: llama_model_loader: - type q6_K:   33 tensors
+May 13 06:16:15 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 323/32064 ).
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_vocab          = 32064
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 4096
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_embd           = 3072
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_head_kv        = 32
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_rot            = 96
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 96
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 96
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_gqa            = 1
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 3072
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 3072
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_ff             = 8192
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: freq_base_train  = 10000.0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 4096
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_K - Medium
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: model params     = 3.82 B
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: model size       = 2.16 GiB (4.85 BPW)
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: general.name     = LLaMA v2
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: EOS token        = 32000 '<|endoftext|>'
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: PAD token        = 32000 '<|endoftext|>'
+May 13 06:16:15 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 06:16:15 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 06:16:15 jake ollama[684]: llm_load_tensors: offloading 23 repeating layers to GPU
+May 13 06:16:15 jake ollama[684]: llm_load_tensors: offloaded 23/33 layers to GPU
+May 13 06:16:15 jake ollama[684]: llm_load_tensors:        CPU buffer size =  2210.78 MiB
+May 13 06:16:15 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  1489.05 MiB
+May 13 06:16:15 jake ollama[684]: .................................................................................................
+May 13 06:16:15 jake ollama[684]: llama_new_context_with_model: n_ctx      = 4096
+May 13 06:16:15 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 06:16:15 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 06:16:15 jake ollama[684]: llama_new_context_with_model: freq_base  = 10000.0
+May 13 06:16:15 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 06:16:16 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =   432.00 MiB
+May 13 06:16:16 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =  1104.00 MiB
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model: KV self size  = 1536.00 MiB, K (f16):  768.00 MiB, V (f16):  768.00 MiB
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    68.62 MiB
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   344.13 MiB
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    20.00 MiB
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 06:16:16 jake ollama[684]: llama_new_context_with_model: graph splits = 103
+May 13 06:16:16 jake ollama[684]: clip_model_load: model name:   openai/clip-vit-large-patch14-336
+May 13 06:16:16 jake ollama[684]: clip_model_load: description:  image encoder for LLaVA
+May 13 06:16:16 jake ollama[684]: clip_model_load: GGUF version: 3
+May 13 06:16:16 jake ollama[684]: clip_model_load: alignment:    32
+May 13 06:16:16 jake ollama[684]: clip_model_load: n_tensors:    377
+May 13 06:16:16 jake ollama[684]: clip_model_load: n_kv:         19
+May 13 06:16:16 jake ollama[684]: clip_model_load: ftype:        f16
+May 13 06:16:16 jake ollama[684]: clip_model_load: loaded meta data with 19 key-value pairs and 377 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-004fc09697203296f72321b296a8d48aade2d23e553cbfb1c1e6a0b5157a08d5
+May 13 06:16:16 jake ollama[684]: clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   0:                       general.architecture str              = clip
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   4:                          general.file_type u32              = 1
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   7:                        clip.projector_type str              = mlp
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   8:                     clip.vision.image_size u32              = 336
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv   9:                     clip.vision.patch_size u32              = 14
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  10:               clip.vision.embedding_length u32              = 1024
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  11:            clip.vision.feed_forward_length u32              = 4096
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  12:                 clip.vision.projection_dim u32              = 768
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  13:           clip.vision.attention.head_count u32              = 16
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  14:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  15:                    clip.vision.block_count u32              = 23
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  16:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  17:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+May 13 06:16:16 jake ollama[684]: clip_model_load: - kv  18:                              clip.use_gelu bool             = false
+May 13 06:16:16 jake ollama[684]: clip_model_load: - type  f32:  235 tensors
+May 13 06:16:16 jake ollama[684]: clip_model_load: - type  f16:  142 tensors
+May 13 06:16:16 jake ollama[684]: clip_model_load: CLIP using CUDA backend
+May 13 06:16:16 jake ollama[684]: clip_model_load: text_encoder:   0
+May 13 06:16:16 jake ollama[684]: clip_model_load: vision_encoder: 1
+May 13 06:16:16 jake ollama[684]: clip_model_load: llava_projector:  1
+May 13 06:16:16 jake ollama[684]: clip_model_load: model size:     579.48 MB
+May 13 06:16:16 jake ollama[684]: clip_model_load: metadata size:  0.14 MB
+May 13 06:16:16 jake ollama[684]: clip_model_load: params backend buffer size =  579.48 MB (377 tensors)
+May 13 06:16:16 jake ollama[684]: clip_model_load: compute allocated memory: 32.89 MB
+May 13 06:16:16 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140466284648000","timestamp":1715580976}
+May 13 06:16:16 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":4096,"slot_id":0,"tid":"140466284648000","timestamp":1715580976}
+May 13 06:16:16 jake ollama[684]: time=2024-05-13T06:16:16.264Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 06:16:16 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715580976}
+May 13 06:16:16 jake ollama[684]: time=2024-05-13T06:16:16.265Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:16:16 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715580976}
+May 13 06:16:16 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715580976}
+May 13 06:16:35 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:16:35 jake ollama[684]: encode_image_with_clip: image encoded in   349.52 ms by CLIP (    0.61 ms per image patch)
+May 13 06:16:35 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    3610.85 ms /     1 tokens ( 3610.85 ms per token,     0.28 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.2769430253422254,"slot_id":0,"t_prompt_processing":3610.851,"t_token":3610.851,"task_id":0,"tid":"140466167215680","timestamp":1715580995}
+May 13 06:16:35 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   15367.94 ms /   172 runs   (   89.35 ms per token,    11.19 tokens per second)","n_decoded":172,"n_tokens_second":11.192130422676662,"slot_id":0,"t_token":89.34849418604652,"t_token_generation":15367.941,"task_id":0,"tid":"140466167215680","timestamp":1715580995}
+May 13 06:16:35 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   18978.79 ms","slot_id":0,"t_prompt_processing":3610.851,"t_token_generation":15367.941,"t_total":18978.792,"task_id":0,"tid":"140466167215680","timestamp":1715580995}
+May 13 06:16:35 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":173,"n_ctx":4096,"n_past":769,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715580995,"truncated":false}
+May 13 06:16:35 jake ollama[684]: [GIN] 2024/05/13 - 06:16:35 | 200 | 20.362142661s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:16:37 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":175,"tid":"140466167215680","timestamp":1715580997}
+May 13 06:16:37 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":62,"slot_id":0,"task_id":175,"tid":"140466167215680","timestamp":1715580997}
+May 13 06:16:37 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":175,"tid":"140466167215680","timestamp":1715580997}
+May 13 06:16:49 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     337.75 ms /    62 tokens (    5.45 ms per token,   183.57 tokens per second)","n_prompt_tokens_processed":62,"n_tokens_second":183.56664061204668,"slot_id":0,"t_prompt_processing":337.752,"t_token":5.4476129032258065,"task_id":175,"tid":"140466167215680","timestamp":1715581009}
+May 13 06:16:49 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   11650.19 ms /   155 runs   (   75.16 ms per token,    13.30 tokens per second)","n_decoded":155,"n_tokens_second":13.304499478721128,"slot_id":0,"t_token":75.16254193548387,"t_token_generation":11650.194,"task_id":175,"tid":"140466167215680","timestamp":1715581009}
+May 13 06:16:49 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   11987.95 ms","slot_id":0,"t_prompt_processing":337.752,"t_token_generation":11650.194,"t_total":11987.946,"task_id":175,"tid":"140466167215680","timestamp":1715581009}
+May 13 06:16:49 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":218,"n_ctx":4096,"n_past":217,"n_system_tokens":0,"slot_id":0,"task_id":175,"tid":"140466167215680","timestamp":1715581009,"truncated":false}
+May 13 06:16:49 jake ollama[684]: [GIN] 2024/05/13 - 06:16:49 | 200 | 11.990243974s |   192.168.2.204 | POST     "/api/generate"
+May 13 06:17:30 jake ollama[684]: time=2024-05-13T06:17:30.436Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:17:30 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":333,"tid":"140466167215680","timestamp":1715581050}
+May 13 06:17:30 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":333,"tid":"140466167215680","timestamp":1715581050}
+May 13 06:17:44 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:17:44 jake ollama[684]: encode_image_with_clip: image encoded in   403.50 ms by CLIP (    0.70 ms per image patch)
+May 13 06:17:44 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    3206.91 ms /     1 tokens ( 3206.91 ms per token,     0.31 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.311826649329105,"slot_id":0,"t_prompt_processing":3206.91,"t_token":3206.91,"task_id":333,"tid":"140466167215680","timestamp":1715581064}
+May 13 06:17:44 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   11077.93 ms /   124 runs   (   89.34 ms per token,    11.19 tokens per second)","n_decoded":124,"n_tokens_second":11.193422889141603,"slot_id":0,"t_token":89.33817741935484,"t_token_generation":11077.934,"task_id":333,"tid":"140466167215680","timestamp":1715581064}
+May 13 06:17:44 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   14284.84 ms","slot_id":0,"t_prompt_processing":3206.91,"t_token_generation":11077.934,"t_total":14284.844,"task_id":333,"tid":"140466167215680","timestamp":1715581064}
+May 13 06:17:44 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":125,"n_ctx":4096,"n_past":737,"n_system_tokens":0,"slot_id":0,"task_id":333,"tid":"140466167215680","timestamp":1715581064,"truncated":false}
+May 13 06:17:44 jake ollama[684]: [GIN] 2024/05/13 - 06:17:44 | 200 | 14.339984529s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:17:45 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":460,"tid":"140466167215680","timestamp":1715581065}
+May 13 06:17:45 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":78,"slot_id":0,"task_id":460,"tid":"140466167215680","timestamp":1715581065}
+May 13 06:17:45 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":460,"tid":"140466167215680","timestamp":1715581065}
+May 13 06:17:47 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     514.57 ms /    78 tokens (    6.60 ms per token,   151.58 tokens per second)","n_prompt_tokens_processed":78,"n_tokens_second":151.5834641874349,"slot_id":0,"t_prompt_processing":514.568,"t_token":6.597025641025641,"task_id":460,"tid":"140466167215680","timestamp":1715581067}
+May 13 06:17:47 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =    1200.83 ms /    17 runs   (   70.64 ms per token,    14.16 tokens per second)","n_decoded":17,"n_tokens_second":14.15692198536674,"slot_id":0,"t_token":70.63682352941177,"t_token_generation":1200.826,"task_id":460,"tid":"140466167215680","timestamp":1715581067}
+May 13 06:17:47 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =    1715.39 ms","slot_id":0,"t_prompt_processing":514.568,"t_token_generation":1200.826,"t_total":1715.394,"task_id":460,"tid":"140466167215680","timestamp":1715581067}
+May 13 06:17:47 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":96,"n_ctx":4096,"n_past":95,"n_system_tokens":0,"slot_id":0,"task_id":460,"tid":"140466167215680","timestamp":1715581067,"truncated":false}
+May 13 06:17:47 jake ollama[684]: [GIN] 2024/05/13 - 06:17:47 | 200 |  1.719212704s |   192.168.2.204 | POST     "/api/generate"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.300Z level=INFO source=routes.go:79 msg="changing loaded model"
+May 13 06:19:37 jake ollama[684]: {"function":"~llama_server_context","level":"INFO","line":370,"msg":"freeing clip model","tid":"140466284648000","timestamp":1715581177}
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama599277715/runners/cuda_v11/libext_server.so"
+May 13 06:19:37 jake ollama[684]: time=2024-05-13T06:19:37.619Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+May 13 06:19:37 jake ollama[684]: loading library /tmp/ollama599277715/runners/cuda_v11/libext_server.so
+May 13 06:19:37 jake ollama[684]: {"function":"load_model","level":"INFO","line":391,"msg":"Multi Modal Mode Enabled","tid":"140469079840320","timestamp":1715581177}
+May 13 06:19:38 jake ollama[684]: key clip.vision.image_grid_pinpoints not found in file
+May 13 06:19:38 jake ollama[684]: key clip.vision.mm_patch_merge_type not found in file
+May 13 06:19:38 jake ollama[684]: key clip.vision.image_crop_resolution not found in file
+May 13 06:19:38 jake ollama[684]: llama_model_loader: loaded meta data with 24 key-value pairs and 291 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-170370233dd5c5415250a2ecd5c71586352850729062ccef1496385647293868 (version GGUF V3 (latest))
+May 13 06:19:38 jake ollama[684]: llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   0:                       general.architecture str              = llama
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   1:                               general.name str              = liuhaotian
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   2:                       llama.context_length u32              = 32768
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 8
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 1000000.000000
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  11:                          general.file_type u32              = 2
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 2
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.padding_token_id u32              = 0
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  20:               tokenizer.ggml.add_bos_token bool             = true
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_eos_token bool             = false
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  22:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - kv  23:               general.quantization_version u32              = 2
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - type q4_0:  225 tensors
+May 13 06:19:38 jake ollama[684]: llama_model_loader: - type q6_K:    1 tensors
+May 13 06:19:38 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 259/32000 ).
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_vocab          = 32000
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 32768
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_embd           = 4096
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_head_kv        = 8
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_rot            = 128
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 128
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 128
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_gqa            = 4
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 1024
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 1024
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_ff             = 14336
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: freq_base_train  = 1000000.0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 32768
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_0
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: model params     = 7.24 B
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: model size       = 3.83 GiB (4.54 BPW)
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: general.name     = liuhaotian
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: EOS token        = 2 '</s>'
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: PAD token        = 0 '<unk>'
+May 13 06:19:38 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 06:19:38 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 06:19:40 jake ollama[684]: llm_load_tensors: offloading 21 repeating layers to GPU
+May 13 06:19:40 jake ollama[684]: llm_load_tensors: offloaded 21/33 layers to GPU
+May 13 06:19:40 jake ollama[684]: llm_load_tensors:        CPU buffer size =  3917.87 MiB
+May 13 06:19:40 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  2457.66 MiB
+May 13 06:19:40 jake ollama[684]: ..................................................................................................
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: n_ctx      = 2048
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: freq_base  = 1000000.0
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 06:19:40 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =    88.00 MiB
+May 13 06:19:40 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =   168.00 MiB
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    70.50 MiB
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   181.04 MiB
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    12.00 MiB
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 06:19:40 jake ollama[684]: llama_new_context_with_model: graph splits = 125
+May 13 06:19:40 jake ollama[684]: clip_model_load: model name:   openai/clip-vit-large-patch14-336
+May 13 06:19:40 jake ollama[684]: clip_model_load: description:  image encoder for LLaVA
+May 13 06:19:40 jake ollama[684]: clip_model_load: GGUF version: 3
+May 13 06:19:40 jake ollama[684]: clip_model_load: alignment:    32
+May 13 06:19:40 jake ollama[684]: clip_model_load: n_tensors:    377
+May 13 06:19:40 jake ollama[684]: clip_model_load: n_kv:         19
+May 13 06:19:40 jake ollama[684]: clip_model_load: ftype:        f16
+May 13 06:19:40 jake ollama[684]: clip_model_load: loaded meta data with 19 key-value pairs and 377 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-72d6f08a42f656d36b356dbe0920675899a99ce21192fd66266fb7d82ed07539
+May 13 06:19:40 jake ollama[684]: clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   0:                       general.architecture str              = clip
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   4:                          general.file_type u32              = 1
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   7:                        clip.projector_type str              = mlp
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   8:                     clip.vision.image_size u32              = 336
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv   9:                     clip.vision.patch_size u32              = 14
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  10:               clip.vision.embedding_length u32              = 1024
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  11:            clip.vision.feed_forward_length u32              = 4096
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  12:                 clip.vision.projection_dim u32              = 768
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  13:           clip.vision.attention.head_count u32              = 16
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  14:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  15:                    clip.vision.block_count u32              = 23
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  16:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  17:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+May 13 06:19:40 jake ollama[684]: clip_model_load: - kv  18:                              clip.use_gelu bool             = false
+May 13 06:19:40 jake ollama[684]: clip_model_load: - type  f32:  235 tensors
+May 13 06:19:40 jake ollama[684]: clip_model_load: - type  f16:  142 tensors
+May 13 06:19:40 jake ollama[684]: clip_model_load: CLIP using CUDA backend
+May 13 06:19:40 jake ollama[684]: clip_model_load: text_encoder:   0
+May 13 06:19:40 jake ollama[684]: clip_model_load: vision_encoder: 1
+May 13 06:19:40 jake ollama[684]: clip_model_load: llava_projector:  1
+May 13 06:19:40 jake ollama[684]: clip_model_load: model size:     595.49 MB
+May 13 06:19:40 jake ollama[684]: clip_model_load: metadata size:  0.14 MB
+May 13 06:19:40 jake ollama[684]: clip_model_load: params backend buffer size =  595.49 MB (377 tensors)
+May 13 06:19:40 jake ollama[684]: clip_model_load: compute allocated memory: 32.89 MB
+May 13 06:19:40 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140469079840320","timestamp":1715581180}
+May 13 06:19:40 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140469079840320","timestamp":1715581180}
+May 13 06:19:40 jake ollama[684]: time=2024-05-13T06:19:40.925Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 06:19:40 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715581180}
+May 13 06:19:40 jake ollama[684]: time=2024-05-13T06:19:40.926Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:19:40 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715581180}
+May 13 06:19:40 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715581180}
+May 13 06:19:59 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:19:59 jake ollama[684]: encode_image_with_clip: image encoded in   356.09 ms by CLIP (    0.62 ms per image patch)
+May 13 06:19:59 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    7053.23 ms /     1 tokens ( 7053.23 ms per token,     0.14 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.14177901472091511,"slot_id":0,"t_prompt_processing":7053.23,"t_token":7053.23,"task_id":0,"tid":"140466167215680","timestamp":1715581199}
+May 13 06:19:59 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   11789.68 ms /    77 runs   (  153.11 ms per token,     6.53 tokens per second)","n_decoded":77,"n_tokens_second":6.531134597184215,"slot_id":0,"t_token":153.11275324675324,"t_token_generation":11789.682,"task_id":0,"tid":"140466167215680","timestamp":1715581199}
+May 13 06:19:59 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   18842.91 ms","slot_id":0,"t_prompt_processing":7053.23,"t_token_generation":11789.682,"t_total":18842.912,"task_id":0,"tid":"140466167215680","timestamp":1715581199}
+May 13 06:19:59 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":78,"n_ctx":2048,"n_past":684,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715581199,"truncated":false}
+May 13 06:19:59 jake ollama[684]: [GIN] 2024/05/13 - 06:19:59 | 200 | 22.535360189s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:20:04 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":80,"tid":"140466167215680","timestamp":1715581204}
+May 13 06:20:04 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":70,"slot_id":0,"task_id":80,"tid":"140466167215680","timestamp":1715581204}
+May 13 06:20:04 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":80,"tid":"140466167215680","timestamp":1715581204}
+May 13 06:20:05 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     927.13 ms /    70 tokens (   13.24 ms per token,    75.50 tokens per second)","n_prompt_tokens_processed":70,"n_tokens_second":75.50198030908354,"slot_id":0,"t_prompt_processing":927.128,"t_token":13.244685714285716,"task_id":80,"tid":"140466167215680","timestamp":1715581205}
+May 13 06:20:05 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =     536.83 ms /     5 runs   (  107.37 ms per token,     9.31 tokens per second)","n_decoded":5,"n_tokens_second":9.313970210197681,"slot_id":0,"t_token":107.3656,"t_token_generation":536.828,"task_id":80,"tid":"140466167215680","timestamp":1715581205}
+May 13 06:20:05 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =    1463.96 ms","slot_id":0,"t_prompt_processing":927.128,"t_token_generation":536.828,"t_total":1463.9560000000001,"task_id":80,"tid":"140466167215680","timestamp":1715581205}
+May 13 06:20:05 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":76,"n_ctx":2048,"n_past":75,"n_system_tokens":0,"slot_id":0,"task_id":80,"tid":"140466167215680","timestamp":1715581205,"truncated":false}
+May 13 06:20:05 jake ollama[684]: [GIN] 2024/05/13 - 06:20:05 | 200 |  1.468985246s |   192.168.2.204 | POST     "/api/generate"
+May 13 06:20:31 jake ollama[684]: time=2024-05-13T06:20:31.237Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:20:31 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":88,"tid":"140466167215680","timestamp":1715581231}
+May 13 06:20:31 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":88,"tid":"140466167215680","timestamp":1715581231}
+May 13 06:21:01 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:21:01 jake ollama[684]: encode_image_with_clip: image encoded in   357.50 ms by CLIP (    0.62 ms per image patch)
+May 13 06:21:01 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    6250.44 ms /     1 tokens ( 6250.44 ms per token,     0.16 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.15998860881105267,"slot_id":0,"t_prompt_processing":6250.445,"t_token":6250.445,"task_id":88,"tid":"140466167215680","timestamp":1715581261}
+May 13 06:21:01 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   23837.60 ms /   154 runs   (  154.79 ms per token,     6.46 tokens per second)","n_decoded":154,"n_tokens_second":6.4603819176427155,"slot_id":0,"t_token":154.78961038961037,"t_token_generation":23837.6,"task_id":88,"tid":"140466167215680","timestamp":1715581261}
+May 13 06:21:01 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   30088.04 ms","slot_id":0,"t_prompt_processing":6250.445,"t_token_generation":23837.6,"t_total":30088.045,"task_id":88,"tid":"140466167215680","timestamp":1715581261}
+May 13 06:21:01 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":155,"n_ctx":2048,"n_past":752,"n_system_tokens":0,"slot_id":0,"task_id":88,"tid":"140466167215680","timestamp":1715581261,"truncated":false}
+May 13 06:21:01 jake ollama[684]: [GIN] 2024/05/13 - 06:21:01 | 200 | 30.148880692s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:21:45 jake ollama[684]: [GIN] 2024/05/13 - 06:21:45 | 200 |    1.260542ms |   192.168.2.204 | GET      "/api/tags"
+May 13 06:21:45 jake ollama[684]: [GIN] 2024/05/13 - 06:21:45 | 200 |    1.276592ms |   192.168.2.204 | GET      "/api/tags"
+May 13 06:22:01 jake ollama[684]: time=2024-05-13T06:22:01.139Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:22:01 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":245,"tid":"140466167215680","timestamp":1715581321}
+May 13 06:22:01 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":245,"tid":"140466167215680","timestamp":1715581321}
+May 13 06:22:28 jake ollama[684]: [GIN] 2024/05/13 - 06:22:28 | 200 | 27.276129951s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:22:28 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:22:28 jake ollama[684]: encode_image_with_clip: image encoded in   426.45 ms by CLIP (    0.74 ms per image patch)
+May 13 06:22:28 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":132,"n_ctx":2048,"n_past":738,"n_system_tokens":0,"slot_id":0,"task_id":245,"tid":"140466167215680","timestamp":1715581348,"truncated":false}
+May 13 06:22:30 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":379,"tid":"140466167215680","timestamp":1715581350}
+May 13 06:22:30 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":70,"slot_id":0,"task_id":379,"tid":"140466167215680","timestamp":1715581350}
+May 13 06:22:30 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":379,"tid":"140466167215680","timestamp":1715581350}
+May 13 06:22:31 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     903.97 ms /    70 tokens (   12.91 ms per token,    77.44 tokens per second)","n_prompt_tokens_processed":70,"n_tokens_second":77.43585545601974,"slot_id":0,"t_prompt_processing":903.974,"t_token":12.913914285714286,"task_id":379,"tid":"140466167215680","timestamp":1715581351}
+May 13 06:22:31 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =     800.14 ms /     7 runs   (  114.31 ms per token,     8.75 tokens per second)","n_decoded":7,"n_tokens_second":8.748501819063486,"slot_id":0,"t_token":114.3052857142857,"t_token_generation":800.137,"task_id":379,"tid":"140466167215680","timestamp":1715581351}
+May 13 06:22:31 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =    1704.11 ms","slot_id":0,"t_prompt_processing":903.974,"t_token_generation":800.137,"t_total":1704.1109999999999,"task_id":379,"tid":"140466167215680","timestamp":1715581351}
+May 13 06:22:31 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":78,"n_ctx":2048,"n_past":77,"n_system_tokens":0,"slot_id":0,"task_id":379,"tid":"140466167215680","timestamp":1715581351,"truncated":false}
+May 13 06:22:31 jake ollama[684]: [GIN] 2024/05/13 - 06:22:31 | 200 |  1.709405757s |   192.168.2.204 | POST     "/api/generate"
+May 13 06:26:48 jake ollama[684]: time=2024-05-13T06:26:48.963Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:26:49 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":389,"tid":"140466167215680","timestamp":1715581609}
+May 13 06:26:49 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":389,"tid":"140466167215680","timestamp":1715581609}
+May 13 06:27:07 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:27:07 jake ollama[684]: encode_image_with_clip: image encoded in   414.30 ms by CLIP (    0.72 ms per image patch)
+May 13 06:27:07 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    5778.33 ms /     1 tokens ( 5778.33 ms per token,     0.17 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.17306032259828613,"slot_id":0,"t_prompt_processing":5778.332,"t_token":5778.332,"task_id":389,"tid":"140466167215680","timestamp":1715581627}
+May 13 06:27:07 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   13012.93 ms /    84 runs   (  154.92 ms per token,     6.46 tokens per second)","n_decoded":84,"n_tokens_second":6.455119093873416,"slot_id":0,"t_token":154.91580952380951,"t_token_generation":13012.928,"task_id":389,"tid":"140466167215680","timestamp":1715581627}
+May 13 06:27:07 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   18791.26 ms","slot_id":0,"t_prompt_processing":5778.332,"t_token_generation":13012.928,"t_total":18791.260000000002,"task_id":389,"tid":"140466167215680","timestamp":1715581627}
+May 13 06:27:07 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":85,"n_ctx":2048,"n_past":676,"n_system_tokens":0,"slot_id":0,"task_id":389,"tid":"140466167215680","timestamp":1715581627,"truncated":false}
+May 13 06:27:07 jake ollama[684]: [GIN] 2024/05/13 - 06:27:07 | 200 | 18.852129331s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:27:12 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":476,"tid":"140466167215680","timestamp":1715581632}
+May 13 06:27:12 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":55,"slot_id":0,"task_id":476,"tid":"140466167215680","timestamp":1715581632}
+May 13 06:27:12 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":476,"tid":"140466167215680","timestamp":1715581632}
+May 13 06:27:13 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     609.65 ms /    55 tokens (   11.08 ms per token,    90.22 tokens per second)","n_prompt_tokens_processed":55,"n_tokens_second":90.2154015733566,"slot_id":0,"t_prompt_processing":609.652,"t_token":11.08458181818182,"task_id":476,"tid":"140466167215680","timestamp":1715581633}
+May 13 06:27:13 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =     798.45 ms /     7 runs   (  114.06 ms per token,     8.77 tokens per second)","n_decoded":7,"n_tokens_second":8.766953095548518,"slot_id":0,"t_token":114.06471428571429,"t_token_generation":798.453,"task_id":476,"tid":"140466167215680","timestamp":1715581633}
+May 13 06:27:13 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =    1408.11 ms","slot_id":0,"t_prompt_processing":609.652,"t_token_generation":798.453,"t_total":1408.105,"task_id":476,"tid":"140466167215680","timestamp":1715581633}
+May 13 06:27:13 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":63,"n_ctx":2048,"n_past":62,"n_system_tokens":0,"slot_id":0,"task_id":476,"tid":"140466167215680","timestamp":1715581633,"truncated":false}
+May 13 06:27:13 jake ollama[684]: [GIN] 2024/05/13 - 06:27:13 | 200 |  1.413489499s |   192.168.2.204 | POST     "/api/generate"
+May 13 06:32:13 jake ollama[684]: {"function":"~llama_server_context","level":"INFO","line":370,"msg":"freeing clip model","tid":"140469079840320","timestamp":1715581933}
+May 13 06:34:46 jake ollama[684]: [GIN] 2024/05/13 - 06:34:46 | 200 |    2.095729ms |    192.168.2.61 | HEAD     "/"
+May 13 06:34:46 jake ollama[684]: [GIN] 2024/05/13 - 06:34:46 | 200 |    1.252144ms |    192.168.2.61 | GET      "/api/tags"
+May 13 06:47:47 jake systemd[1]: Starting Daily apt download activities...
+May 13 06:47:47 jake systemd[1]: apt-daily.service: Deactivated successfully.
+May 13 06:47:47 jake systemd[1]: Finished Daily apt download activities.
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.610Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.610Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.610Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.611Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.611Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.611Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama599277715/runners/cuda_v11/libext_server.so"
+May 13 06:58:56 jake ollama[684]: time=2024-05-13T06:58:56.611Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+May 13 06:58:56 jake ollama[684]: loading library /tmp/ollama599277715/runners/cuda_v11/libext_server.so
+May 13 06:58:56 jake ollama[684]: {"function":"load_model","level":"INFO","line":391,"msg":"Multi Modal Mode Enabled","tid":"140466267862592","timestamp":1715583536}
+May 13 06:58:57 jake ollama[684]: key clip.vision.image_grid_pinpoints not found in file
+May 13 06:58:57 jake ollama[684]: key clip.vision.mm_patch_merge_type not found in file
+May 13 06:58:57 jake ollama[684]: key clip.vision.image_crop_resolution not found in file
+May 13 06:58:57 jake ollama[684]: llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-377876be20bac24488716c04824ab3a6978900679b40013b0d2585004555e658 (version GGUF V3 (latest))
+May 13 06:58:57 jake ollama[684]: llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   0:                       general.architecture str              = llama
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   2:                           llama.vocab_size u32              = 32064
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   3:                       llama.context_length u32              = 4096
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   4:                     llama.embedding_length u32              = 3072
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   5:                          llama.block_count u32              = 32
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   6:                  llama.feed_forward_length u32              = 8192
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   7:                 llama.rope.dimension_count u32              = 96
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   8:                 llama.attention.head_count u32              = 32
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv   9:              llama.attention.head_count_kv u32              = 32
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  10:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  11:                       llama.rope.freq_base f32              = 10000.000000
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  12:                          general.file_type u32              = 15
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,32064]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  15:                      tokenizer.ggml.scores arr[f32,32064]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  16:                  tokenizer.ggml.token_type arr[i32,32064]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 32000
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  20:            tokenizer.ggml.padding_token_id u32              = 32000
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - type q4_K:  193 tensors
+May 13 06:58:57 jake ollama[684]: llama_model_loader: - type q6_K:   33 tensors
+May 13 06:58:57 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 323/32064 ).
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_vocab          = 32064
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 4096
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_embd           = 3072
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_head_kv        = 32
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_rot            = 96
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 96
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 96
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_gqa            = 1
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 3072
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 3072
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_ff             = 8192
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: freq_base_train  = 10000.0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 4096
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_K - Medium
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: model params     = 3.82 B
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: model size       = 2.16 GiB (4.85 BPW)
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: general.name     = LLaMA v2
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: EOS token        = 32000 '<|endoftext|>'
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: PAD token        = 32000 '<|endoftext|>'
+May 13 06:58:57 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 06:58:57 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 06:58:57 jake ollama[684]: llm_load_tensors: offloading 23 repeating layers to GPU
+May 13 06:58:57 jake ollama[684]: llm_load_tensors: offloaded 23/33 layers to GPU
+May 13 06:58:57 jake ollama[684]: llm_load_tensors:        CPU buffer size =  2210.78 MiB
+May 13 06:58:57 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  1489.05 MiB
+May 13 06:58:57 jake ollama[684]: .................................................................................................
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: n_ctx      = 4096
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: freq_base  = 10000.0
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 06:58:57 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =   432.00 MiB
+May 13 06:58:57 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =  1104.00 MiB
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: KV self size  = 1536.00 MiB, K (f16):  768.00 MiB, V (f16):  768.00 MiB
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    68.62 MiB
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   344.13 MiB
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    20.00 MiB
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 06:58:57 jake ollama[684]: llama_new_context_with_model: graph splits = 103
+May 13 06:58:57 jake ollama[684]: clip_model_load: model name:   openai/clip-vit-large-patch14-336
+May 13 06:58:57 jake ollama[684]: clip_model_load: description:  image encoder for LLaVA
+May 13 06:58:57 jake ollama[684]: clip_model_load: GGUF version: 3
+May 13 06:58:57 jake ollama[684]: clip_model_load: alignment:    32
+May 13 06:58:57 jake ollama[684]: clip_model_load: n_tensors:    377
+May 13 06:58:57 jake ollama[684]: clip_model_load: n_kv:         19
+May 13 06:58:57 jake ollama[684]: clip_model_load: ftype:        f16
+May 13 06:58:57 jake ollama[684]: clip_model_load: loaded meta data with 19 key-value pairs and 377 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-004fc09697203296f72321b296a8d48aade2d23e553cbfb1c1e6a0b5157a08d5
+May 13 06:58:57 jake ollama[684]: clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   0:                       general.architecture str              = clip
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   4:                          general.file_type u32              = 1
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   7:                        clip.projector_type str              = mlp
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   8:                     clip.vision.image_size u32              = 336
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv   9:                     clip.vision.patch_size u32              = 14
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  10:               clip.vision.embedding_length u32              = 1024
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  11:            clip.vision.feed_forward_length u32              = 4096
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  12:                 clip.vision.projection_dim u32              = 768
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  13:           clip.vision.attention.head_count u32              = 16
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  14:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  15:                    clip.vision.block_count u32              = 23
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  16:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  17:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+May 13 06:58:57 jake ollama[684]: clip_model_load: - kv  18:                              clip.use_gelu bool             = false
+May 13 06:58:57 jake ollama[684]: clip_model_load: - type  f32:  235 tensors
+May 13 06:58:57 jake ollama[684]: clip_model_load: - type  f16:  142 tensors
+May 13 06:58:57 jake ollama[684]: clip_model_load: CLIP using CUDA backend
+May 13 06:58:57 jake ollama[684]: clip_model_load: text_encoder:   0
+May 13 06:58:57 jake ollama[684]: clip_model_load: vision_encoder: 1
+May 13 06:58:57 jake ollama[684]: clip_model_load: llava_projector:  1
+May 13 06:58:57 jake ollama[684]: clip_model_load: model size:     579.48 MB
+May 13 06:58:57 jake ollama[684]: clip_model_load: metadata size:  0.14 MB
+May 13 06:58:57 jake ollama[684]: clip_model_load: params backend buffer size =  579.48 MB (377 tensors)
+May 13 06:58:57 jake ollama[684]: clip_model_load: compute allocated memory: 32.89 MB
+May 13 06:58:57 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140466267862592","timestamp":1715583537}
+May 13 06:58:57 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":4096,"slot_id":0,"tid":"140466267862592","timestamp":1715583537}
+May 13 06:58:57 jake ollama[684]: time=2024-05-13T06:58:57.873Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 06:58:57 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715583537}
+May 13 06:58:57 jake ollama[684]: time=2024-05-13T06:58:57.873Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 06:58:57 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715583537}
+May 13 06:58:57 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715583537}
+May 13 06:59:27 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 06:59:27 jake ollama[684]: encode_image_with_clip: image encoded in   351.09 ms by CLIP (    0.61 ms per image patch)
+May 13 06:59:27 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    3334.97 ms /     1 tokens ( 3334.97 ms per token,     0.30 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.29985304202410396,"slot_id":0,"t_prompt_processing":3334.967,"t_token":3334.967,"task_id":0,"tid":"140466167215680","timestamp":1715583567}
+May 13 06:59:27 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   26147.40 ms /   288 runs   (   90.79 ms per token,    11.01 tokens per second)","n_decoded":288,"n_tokens_second":11.014481136094776,"slot_id":0,"t_token":90.78956944444445,"t_token_generation":26147.396,"task_id":0,"tid":"140466167215680","timestamp":1715583567}
+May 13 06:59:27 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   29482.36 ms","slot_id":0,"t_prompt_processing":3334.967,"t_token_generation":26147.396,"t_total":29482.363,"task_id":0,"tid":"140466167215680","timestamp":1715583567}
+May 13 06:59:27 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":289,"n_ctx":4096,"n_past":878,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715583567,"truncated":false}
+May 13 06:59:27 jake ollama[684]: [GIN] 2024/05/13 - 06:59:27 | 200 | 30.909874916s |   192.168.2.204 | POST     "/api/chat"
+May 13 06:59:31 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":291,"tid":"140466167215680","timestamp":1715583571}
+May 13 06:59:31 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":55,"slot_id":0,"task_id":291,"tid":"140466167215680","timestamp":1715583571}
+May 13 06:59:31 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":291,"tid":"140466167215680","timestamp":1715583571}
+May 13 06:59:32 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     343.19 ms /    55 tokens (    6.24 ms per token,   160.26 tokens per second)","n_prompt_tokens_processed":55,"n_tokens_second":160.26341477628685,"slot_id":0,"t_prompt_processing":343.185,"t_token":6.239727272727273,"task_id":291,"tid":"140466167215680","timestamp":1715583572}
+May 13 06:59:32 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =     512.92 ms /     8 runs   (   64.12 ms per token,    15.60 tokens per second)","n_decoded":8,"n_tokens_second":15.59691337084391,"slot_id":0,"t_token":64.11525,"t_token_generation":512.922,"task_id":291,"tid":"140466167215680","timestamp":1715583572}
+May 13 06:59:32 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =     856.11 ms","slot_id":0,"t_prompt_processing":343.185,"t_token_generation":512.922,"t_total":856.107,"task_id":291,"tid":"140466167215680","timestamp":1715583572}
+May 13 06:59:32 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":64,"n_ctx":4096,"n_past":63,"n_system_tokens":0,"slot_id":0,"task_id":291,"tid":"140466167215680","timestamp":1715583572,"truncated":false}
+May 13 06:59:32 jake ollama[684]: [GIN] 2024/05/13 - 06:59:32 | 200 |  859.988654ms |   192.168.2.204 | POST     "/api/generate"
+May 13 07:00:01 jake ollama[684]: time=2024-05-13T07:00:01.091Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 07:00:01 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":302,"tid":"140466167215680","timestamp":1715583601}
+May 13 07:00:01 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":302,"tid":"140466167215680","timestamp":1715583601}
+May 13 07:00:09 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 07:00:09 jake ollama[684]: encode_image_with_clip: image encoded in   349.10 ms by CLIP (    0.61 ms per image patch)
+May 13 07:00:09 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    3351.62 ms /     1 tokens ( 3351.62 ms per token,     0.30 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.29836344665873216,"slot_id":0,"t_prompt_processing":3351.617,"t_token":3351.617,"task_id":302,"tid":"140466167215680","timestamp":1715583609}
+May 13 07:00:09 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =    4705.34 ms /    54 runs   (   87.14 ms per token,    11.48 tokens per second)","n_decoded":54,"n_tokens_second":11.476315329190667,"slot_id":0,"t_token":87.13598148148148,"t_token_generation":4705.343,"task_id":302,"tid":"140466167215680","timestamp":1715583609}
+May 13 07:00:09 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =    8056.96 ms","slot_id":0,"t_prompt_processing":3351.617,"t_token_generation":4705.343,"t_total":8056.96,"task_id":302,"tid":"140466167215680","timestamp":1715583609}
+May 13 07:00:09 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":55,"n_ctx":4096,"n_past":644,"n_system_tokens":0,"slot_id":0,"task_id":302,"tid":"140466167215680","timestamp":1715583609,"truncated":false}
+May 13 07:00:09 jake ollama[684]: [GIN] 2024/05/13 - 07:00:09 | 200 |  8.119514884s |   192.168.2.204 | POST     "/api/chat"
+May 13 07:00:14 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":1,"n_past_se":0,"n_prompt_tokens_processed":55,"slot_id":0,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     390.82 ms /    55 tokens (    7.11 ms per token,   140.73 tokens per second)","n_prompt_tokens_processed":55,"n_tokens_second":140.7304678904247,"slot_id":0,"t_prompt_processing":390.818,"t_token":7.105781818181818,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =     368.96 ms /     6 runs   (   61.49 ms per token,    16.26 tokens per second)","n_decoded":6,"n_tokens_second":16.26201356251931,"slot_id":0,"t_token":61.493,"t_token_generation":368.958,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =     759.78 ms","slot_id":0,"t_prompt_processing":390.818,"t_token_generation":368.958,"t_total":759.7760000000001,"task_id":359,"tid":"140466167215680","timestamp":1715583614}
+May 13 07:00:14 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":62,"n_ctx":4096,"n_past":61,"n_system_tokens":0,"slot_id":0,"task_id":359,"tid":"140466167215680","timestamp":1715583614,"truncated":false}
+May 13 07:00:14 jake ollama[684]: [GIN] 2024/05/13 - 07:00:14 | 200 |  763.695852ms |   192.168.2.204 | POST     "/api/generate"
+May 13 07:03:34 jake ollama[684]: [GIN] 2024/05/13 - 07:03:34 | 200 |    1.657992ms |   192.168.2.204 | GET      "/api/tags"
+May 13 07:03:40 jake ollama[684]: [GIN] 2024/05/13 - 07:03:40 | 200 |      90.708µs |   192.168.2.204 | GET      "/api/version"
+May 13 07:04:11 jake ollama[684]: [GIN] 2024/05/13 - 07:04:11 | 200 |      1.5603ms |   192.168.2.204 | GET      "/api/tags"
+May 13 07:04:40 jake ollama[684]: [GIN] 2024/05/13 - 07:04:40 | 200 |       63.31µs |   192.168.2.204 | GET      "/api/version"
+May 13 07:04:57 jake ollama[684]: [GIN] 2024/05/13 - 07:04:57 | 200 |      50.255µs |   192.168.2.204 | GET      "/api/version"
+May 13 07:04:59 jake ollama[684]: [GIN] 2024/05/13 - 07:04:59 | 200 |       43.39µs |   192.168.2.204 | GET      "/api/version"
+May 13 07:05:05 jake ollama[684]: [GIN] 2024/05/13 - 07:05:05 | 200 |     1.30447ms |   192.168.2.204 | GET      "/api/tags"
+May 13 07:05:14 jake ollama[684]: {"function":"~llama_server_context","level":"INFO","line":370,"msg":"freeing clip model","tid":"140469079840320","timestamp":1715583914}
+May 13 07:06:53 jake ollama[684]: [GIN] 2024/05/13 - 07:06:53 | 200 |      33.247µs |    192.168.2.61 | HEAD     "/"
+May 13 07:06:53 jake ollama[684]: [GIN] 2024/05/13 - 07:06:53 | 200 |      619.59µs |    192.168.2.61 | POST     "/api/show"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama599277715/runners/cuda_v11/libext_server.so"
+May 13 07:06:53 jake ollama[684]: time=2024-05-13T07:06:53.882Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+May 13 07:06:53 jake ollama[684]: loading library /tmp/ollama599277715/runners/cuda_v11/libext_server.so
+May 13 07:06:53 jake ollama[684]: {"function":"load_model","level":"INFO","line":391,"msg":"Multi Modal Mode Enabled","tid":"140466897020480","timestamp":1715584013}
+May 13 07:06:54 jake ollama[684]: key clip.vision.image_grid_pinpoints not found in file
+May 13 07:06:54 jake ollama[684]: key clip.vision.mm_patch_merge_type not found in file
+May 13 07:06:54 jake ollama[684]: key clip.vision.image_crop_resolution not found in file
+May 13 07:06:54 jake ollama[684]: llama_model_loader: loaded meta data with 24 key-value pairs and 291 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-170370233dd5c5415250a2ecd5c71586352850729062ccef1496385647293868 (version GGUF V3 (latest))
+May 13 07:06:54 jake ollama[684]: llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   0:                       general.architecture str              = llama
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   1:                               general.name str              = liuhaotian
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   2:                       llama.context_length u32              = 32768
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 8
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 1000000.000000
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  11:                          general.file_type u32              = 2
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 2
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.padding_token_id u32              = 0
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  20:               tokenizer.ggml.add_bos_token bool             = true
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_eos_token bool             = false
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  22:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - kv  23:               general.quantization_version u32              = 2
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - type q4_0:  225 tensors
+May 13 07:06:54 jake ollama[684]: llama_model_loader: - type q6_K:    1 tensors
+May 13 07:06:54 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 259/32000 ).
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_vocab          = 32000
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 32768
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_embd           = 4096
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_head_kv        = 8
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_rot            = 128
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 128
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 128
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_gqa            = 4
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 1024
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 1024
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_ff             = 14336
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: freq_base_train  = 1000000.0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 32768
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_0
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: model params     = 7.24 B
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: model size       = 3.83 GiB (4.54 BPW)
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: general.name     = liuhaotian
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: EOS token        = 2 '</s>'
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: PAD token        = 0 '<unk>'
+May 13 07:06:54 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 07:06:54 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 07:06:56 jake ollama[684]: llm_load_tensors: offloading 21 repeating layers to GPU
+May 13 07:06:56 jake ollama[684]: llm_load_tensors: offloaded 21/33 layers to GPU
+May 13 07:06:56 jake ollama[684]: llm_load_tensors:        CPU buffer size =  3917.87 MiB
+May 13 07:06:56 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  2457.66 MiB
+May 13 07:06:56 jake ollama[684]: ..................................................................................................
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: n_ctx      = 2048
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: freq_base  = 1000000.0
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 07:06:56 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =    88.00 MiB
+May 13 07:06:56 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =   168.00 MiB
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    70.50 MiB
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   181.04 MiB
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    12.00 MiB
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 07:06:56 jake ollama[684]: llama_new_context_with_model: graph splits = 125
+May 13 07:06:57 jake ollama[684]: clip_model_load: model name:   openai/clip-vit-large-patch14-336
+May 13 07:06:57 jake ollama[684]: clip_model_load: description:  image encoder for LLaVA
+May 13 07:06:57 jake ollama[684]: clip_model_load: GGUF version: 3
+May 13 07:06:57 jake ollama[684]: clip_model_load: alignment:    32
+May 13 07:06:57 jake ollama[684]: clip_model_load: n_tensors:    377
+May 13 07:06:57 jake ollama[684]: clip_model_load: n_kv:         19
+May 13 07:06:57 jake ollama[684]: clip_model_load: ftype:        f16
+May 13 07:06:57 jake ollama[684]: clip_model_load: loaded meta data with 19 key-value pairs and 377 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-72d6f08a42f656d36b356dbe0920675899a99ce21192fd66266fb7d82ed07539
+May 13 07:06:57 jake ollama[684]: clip_model_load: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   0:                       general.architecture str              = clip
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   1:                      clip.has_text_encoder bool             = false
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   2:                    clip.has_vision_encoder bool             = true
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   3:                   clip.has_llava_projector bool             = true
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   4:                          general.file_type u32              = 1
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   5:                               general.name str              = openai/clip-vit-large-patch14-336
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   6:                        general.description str              = image encoder for LLaVA
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   7:                        clip.projector_type str              = mlp
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   8:                     clip.vision.image_size u32              = 336
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv   9:                     clip.vision.patch_size u32              = 14
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  10:               clip.vision.embedding_length u32              = 1024
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  11:            clip.vision.feed_forward_length u32              = 4096
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  12:                 clip.vision.projection_dim u32              = 768
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  13:           clip.vision.attention.head_count u32              = 16
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  14:   clip.vision.attention.layer_norm_epsilon f32              = 0.000010
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  15:                    clip.vision.block_count u32              = 23
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  16:                     clip.vision.image_mean arr[f32,3]       = [0.481455, 0.457828, 0.408211]
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  17:                      clip.vision.image_std arr[f32,3]       = [0.268630, 0.261303, 0.275777]
+May 13 07:06:57 jake ollama[684]: clip_model_load: - kv  18:                              clip.use_gelu bool             = false
+May 13 07:06:57 jake ollama[684]: clip_model_load: - type  f32:  235 tensors
+May 13 07:06:57 jake ollama[684]: clip_model_load: - type  f16:  142 tensors
+May 13 07:06:57 jake ollama[684]: clip_model_load: CLIP using CUDA backend
+May 13 07:06:57 jake ollama[684]: clip_model_load: text_encoder:   0
+May 13 07:06:57 jake ollama[684]: clip_model_load: vision_encoder: 1
+May 13 07:06:57 jake ollama[684]: clip_model_load: llava_projector:  1
+May 13 07:06:57 jake ollama[684]: clip_model_load: model size:     595.49 MB
+May 13 07:06:57 jake ollama[684]: clip_model_load: metadata size:  0.14 MB
+May 13 07:06:57 jake ollama[684]: clip_model_load: params backend buffer size =  595.49 MB (377 tensors)
+May 13 07:06:57 jake ollama[684]: clip_model_load: compute allocated memory: 32.89 MB
+May 13 07:06:57 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140466897020480","timestamp":1715584017}
+May 13 07:06:57 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140466897020480","timestamp":1715584017}
+May 13 07:06:57 jake ollama[684]: time=2024-05-13T07:06:57.052Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 07:06:57 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715584017}
+May 13 07:06:57 jake ollama[684]: time=2024-05-13T07:06:57.053Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 07:06:57 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584017}
+May 13 07:06:57 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584017}
+May 13 07:07:21 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 07:07:21 jake ollama[684]: encode_image_with_clip: image encoded in   355.78 ms by CLIP (    0.62 ms per image patch)
+May 13 07:07:21 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    5564.10 ms /     1 tokens ( 5564.10 ms per token,     0.18 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.17972342362338597,"slot_id":0,"t_prompt_processing":5564.105,"t_token":5564.105,"task_id":0,"tid":"140466167215680","timestamp":1715584041}
+May 13 07:07:21 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   18944.41 ms /   122 runs   (  155.28 ms per token,     6.44 tokens per second)","n_decoded":122,"n_tokens_second":6.439894066909761,"slot_id":0,"t_token":155.28205737704917,"t_token_generation":18944.411,"task_id":0,"tid":"140466167215680","timestamp":1715584041}
+May 13 07:07:21 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   24508.52 ms","slot_id":0,"t_prompt_processing":5564.105,"t_token_generation":18944.411,"t_total":24508.516,"task_id":0,"tid":"140466167215680","timestamp":1715584041}
+May 13 07:07:21 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":123,"n_ctx":2048,"n_past":712,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584041,"truncated":false}
+May 13 07:07:21 jake ollama[684]: [GIN] 2024/05/13 - 07:07:21 | 200 |  27.84905645s |    192.168.2.61 | POST     "/api/generate"
+May 13 07:08:27 jake ollama[684]: [GIN] 2024/05/13 - 07:08:27 | 200 |      35.817µs |    192.168.2.61 | HEAD     "/"
+May 13 07:08:27 jake ollama[684]: [GIN] 2024/05/13 - 07:08:27 | 200 |     382.576µs |    192.168.2.61 | POST     "/api/show"
+May 13 07:08:27 jake ollama[684]: time=2024-05-13T07:08:27.428Z level=INFO source=dyn_ext_server.go:169 msg="loaded 1 images"
+May 13 07:08:27 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":125,"tid":"140466167215680","timestamp":1715584107}
+May 13 07:08:27 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":125,"tid":"140466167215680","timestamp":1715584107}
+May 13 07:08:57 jake ollama[684]: encode_image_with_clip: image embedding created: 576 tokens
+May 13 07:08:57 jake ollama[684]: encode_image_with_clip: image encoded in   428.45 ms by CLIP (    0.74 ms per image patch)
+May 13 07:08:57 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    5941.03 ms /     1 tokens ( 5941.03 ms per token,     0.17 tokens per second)","n_prompt_tokens_processed":1,"n_tokens_second":0.16832100971060737,"slot_id":0,"t_prompt_processing":5941.029,"t_token":5941.029,"task_id":125,"tid":"140466167215680","timestamp":1715584137}
+May 13 07:08:57 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   24111.27 ms /   154 runs   (  156.57 ms per token,     6.39 tokens per second)","n_decoded":154,"n_tokens_second":6.38705388968886,"slot_id":0,"t_token":156.5667077922078,"t_token_generation":24111.273,"task_id":125,"tid":"140466167215680","timestamp":1715584137}
+May 13 07:08:57 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   30052.30 ms","slot_id":0,"t_prompt_processing":5941.029,"t_token_generation":24111.273,"t_total":30052.302000000003,"task_id":125,"tid":"140466167215680","timestamp":1715584137}
+May 13 07:08:57 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":155,"n_ctx":2048,"n_past":748,"n_system_tokens":0,"slot_id":0,"task_id":125,"tid":"140466167215680","timestamp":1715584137,"truncated":false}
+May 13 07:08:57 jake ollama[684]: [GIN] 2024/05/13 - 07:08:57 | 200 | 30.120068386s |    192.168.2.61 | POST     "/api/generate"
+May 13 07:09:04 jake sshd[73026]: Accepted publickey for administrator from 192.168.2.204 port 62743 ssh2: RSA SHA256:DmMvIqzXC++kQeG5atJdoTC4PQzKUuZXI+j+k8UwBW4
+May 13 07:09:04 jake sshd[73026]: pam_unix(sshd:session): session opened for user administrator(uid=1000) by (uid=0)
+May 13 07:09:04 jake systemd-logind[691]: New session 11 of user administrator.
+May 13 07:09:04 jake systemd[1]: Started Session 11 of User administrator.
+May 13 07:13:48 jake ollama[684]: [GIN] 2024/05/13 - 07:13:48 | 200 |      33.034µs |    192.168.2.61 | HEAD     "/"
+May 13 07:13:48 jake ollama[684]: [GIN] 2024/05/13 - 07:13:48 | 200 |    1.483399ms |    192.168.2.61 | GET      "/api/tags"
+May 13 07:13:57 jake ollama[684]: {"function":"~llama_server_context","level":"INFO","line":370,"msg":"freeing clip model","tid":"140466293040704","timestamp":1715584437}
+May 13 07:15:03 jake ollama[684]: [GIN] 2024/05/13 - 07:15:03 | 200 |       26.22µs |    192.168.2.61 | HEAD     "/"
+May 13 07:15:03 jake ollama[684]: [GIN] 2024/05/13 - 07:15:03 | 200 |     388.131µs |    192.168.2.61 | POST     "/api/show"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama599277715/runners/cuda_v11/libext_server.so"
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.164Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+May 13 07:15:03 jake ollama[684]: llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-4fed7364ee3e0c7cb4fe0880148bfdfcd1b630981efa0802a6b62ee52e7da97e (version GGUF V3 (latest))
+May 13 07:15:03 jake ollama[684]: llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   0:                       general.architecture str              = llama
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   2:                           llama.vocab_size u32              = 32064
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   3:                       llama.context_length u32              = 4096
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   4:                     llama.embedding_length u32              = 3072
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   5:                          llama.block_count u32              = 32
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   6:                  llama.feed_forward_length u32              = 8192
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   7:                 llama.rope.dimension_count u32              = 96
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   8:                 llama.attention.head_count u32              = 32
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv   9:              llama.attention.head_count_kv u32              = 32
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  10:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  11:                       llama.rope.freq_base f32              = 10000.000000
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  12:                          general.file_type u32              = 15
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,32064]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  15:                      tokenizer.ggml.scores arr[f32,32064]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  16:                  tokenizer.ggml.token_type arr[i32,32064]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 32000
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  20:            tokenizer.ggml.padding_token_id u32              = 32000
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - type q4_K:  193 tensors
+May 13 07:15:03 jake ollama[684]: llama_model_loader: - type q6_K:   33 tensors
+May 13 07:15:03 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 323/32064 ).
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_vocab          = 32064
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 4096
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_embd           = 3072
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_head_kv        = 32
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_rot            = 96
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 96
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 96
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_gqa            = 1
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 3072
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 3072
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_ff             = 8192
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: freq_base_train  = 10000.0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 4096
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_K - Medium
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: model params     = 3.82 B
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: model size       = 2.16 GiB (4.85 BPW)
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: general.name     = LLaMA v2
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: EOS token        = 32000 '<|endoftext|>'
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: PAD token        = 32000 '<|endoftext|>'
+May 13 07:15:03 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 07:15:03 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 07:15:03 jake ollama[684]: llm_load_tensors: offloading 30 repeating layers to GPU
+May 13 07:15:03 jake ollama[684]: llm_load_tensors: offloaded 30/33 layers to GPU
+May 13 07:15:03 jake ollama[684]: llm_load_tensors:        CPU buffer size =  2210.78 MiB
+May 13 07:15:03 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  1942.31 MiB
+May 13 07:15:03 jake ollama[684]: .................................................................................................
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: n_ctx      = 2048
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: freq_base  = 10000.0
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 07:15:03 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =    48.00 MiB
+May 13 07:15:03 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =   720.00 MiB
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: KV self size  =  768.00 MiB, K (f16):  384.00 MiB, V (f16):  384.00 MiB
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    68.62 MiB
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   185.06 MiB
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 07:15:03 jake ollama[684]: llama_new_context_with_model: graph splits = 26
+May 13 07:15:03 jake ollama[684]: loading library /tmp/ollama599277715/runners/cuda_v11/libext_server.so
+May 13 07:15:03 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140466293040704","timestamp":1715584503}
+May 13 07:15:03 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140466293040704","timestamp":1715584503}
+May 13 07:15:03 jake ollama[684]: time=2024-05-13T07:15:03.857Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 07:15:03 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715584503}
+May 13 07:15:03 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584503}
+May 13 07:15:03 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":0,"n_past_se":0,"n_prompt_tokens_processed":25,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584503}
+May 13 07:15:03 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584503}
+May 13 07:15:16 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     393.30 ms /    25 tokens (   15.73 ms per token,    63.56 tokens per second)","n_prompt_tokens_processed":25,"n_tokens_second":63.564224020666,"slot_id":0,"t_prompt_processing":393.303,"t_token":15.73212,"task_id":0,"tid":"140466167215680","timestamp":1715584516}
+May 13 07:15:16 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   12462.84 ms /   237 runs   (   52.59 ms per token,    19.02 tokens per second)","n_decoded":237,"n_tokens_second":19.016526243929555,"slot_id":0,"t_token":52.585839662447256,"t_token_generation":12462.844,"task_id":0,"tid":"140466167215680","timestamp":1715584516}
+May 13 07:15:16 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   12856.15 ms","slot_id":0,"t_prompt_processing":393.303,"t_token_generation":12462.844,"t_total":12856.146999999999,"task_id":0,"tid":"140466167215680","timestamp":1715584516}
+May 13 07:15:16 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":262,"n_ctx":2048,"n_past":261,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584516,"truncated":false}
+May 13 07:15:16 jake ollama[684]: [GIN] 2024/05/13 - 07:15:16 | 200 | 13.663439258s |    192.168.2.61 | POST     "/api/generate"
+May 13 07:21:42 jake ollama[684]: [GIN] 2024/05/13 - 07:21:42 | 200 |      29.661µs |    192.168.2.61 | HEAD     "/"
+May 13 07:21:42 jake ollama[684]: [GIN] 2024/05/13 - 07:21:42 | 200 |    1.394405ms |    192.168.2.61 | GET      "/api/tags"
+May 13 07:21:57 jake ollama[684]: [GIN] 2024/05/13 - 07:21:57 | 200 |      26.863µs |    192.168.2.61 | HEAD     "/"
+May 13 07:21:57 jake ollama[684]: [GIN] 2024/05/13 - 07:21:57 | 200 |     365.838µs |    192.168.2.61 | POST     "/api/show"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.061Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=gpu.go:188 msg="[cudart] CUDART CUDA Compute Capability detected: 6.1"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama599277715/runners/cuda_v11/libext_server.so"
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.062Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+May 13 07:21:58 jake ollama[684]: llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /usr/share/ollama/.ollama/models/blobs/sha256-4fed7364ee3e0c7cb4fe0880148bfdfcd1b630981efa0802a6b62ee52e7da97e (version GGUF V3 (latest))
+May 13 07:21:58 jake ollama[684]: llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   0:                       general.architecture str              = llama
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   1:                               general.name str              = LLaMA v2
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   2:                           llama.vocab_size u32              = 32064
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   3:                       llama.context_length u32              = 4096
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   4:                     llama.embedding_length u32              = 3072
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   5:                          llama.block_count u32              = 32
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   6:                  llama.feed_forward_length u32              = 8192
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   7:                 llama.rope.dimension_count u32              = 96
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   8:                 llama.attention.head_count u32              = 32
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv   9:              llama.attention.head_count_kv u32              = 32
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  10:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  11:                       llama.rope.freq_base f32              = 10000.000000
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  12:                          general.file_type u32              = 15
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,32064]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  15:                      tokenizer.ggml.scores arr[f32,32064]   = [0.000000, 0.000000, 0.000000, 0.0000...
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  16:                  tokenizer.ggml.token_type arr[i32,32064]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 1
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 32000
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 0
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  20:            tokenizer.ggml.padding_token_id u32              = 32000
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - type  f32:   65 tensors
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - type q4_K:  193 tensors
+May 13 07:21:58 jake ollama[684]: llama_model_loader: - type q6_K:   33 tensors
+May 13 07:21:58 jake ollama[684]: llm_load_vocab: special tokens definition check successful ( 323/32064 ).
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: format           = GGUF V3 (latest)
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: arch             = llama
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: vocab type       = SPM
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_vocab          = 32064
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_merges         = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_ctx_train      = 4096
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_embd           = 3072
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_head           = 32
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_head_kv        = 32
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_layer          = 32
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_rot            = 96
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_embd_head_k    = 96
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_embd_head_v    = 96
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_gqa            = 1
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_embd_k_gqa     = 3072
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_embd_v_gqa     = 3072
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: f_norm_eps       = 0.0e+00
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: f_logit_scale    = 0.0e+00
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_ff             = 8192
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_expert         = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_expert_used    = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: causal attn      = 1
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: pooling type     = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: rope type        = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: rope scaling     = linear
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: freq_base_train  = 10000.0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: freq_scale_train = 1
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: n_yarn_orig_ctx  = 4096
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: rope_finetuned   = unknown
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: ssm_d_conv       = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: ssm_d_inner      = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: ssm_d_state      = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: ssm_dt_rank      = 0
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: model type       = 7B
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: model ftype      = Q4_K - Medium
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: model params     = 3.82 B
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: model size       = 2.16 GiB (4.85 BPW)
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: general.name     = LLaMA v2
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: BOS token        = 1 '<s>'
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: EOS token        = 32000 '<|endoftext|>'
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: UNK token        = 0 '<unk>'
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: PAD token        = 32000 '<|endoftext|>'
+May 13 07:21:58 jake ollama[684]: llm_load_print_meta: LF token         = 13 '<0x0A>'
+May 13 07:21:58 jake ollama[684]: llm_load_tensors: ggml ctx size =    0.22 MiB
+May 13 07:21:58 jake ollama[684]: llm_load_tensors: offloading 30 repeating layers to GPU
+May 13 07:21:58 jake ollama[684]: llm_load_tensors: offloaded 30/33 layers to GPU
+May 13 07:21:58 jake ollama[684]: llm_load_tensors:        CPU buffer size =  2210.78 MiB
+May 13 07:21:58 jake ollama[684]: llm_load_tensors:      CUDA0 buffer size =  1942.31 MiB
+May 13 07:21:58 jake ollama[684]: .................................................................................................
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: n_ctx      = 2048
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: n_batch    = 512
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: n_ubatch   = 512
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: freq_base  = 10000.0
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: freq_scale = 1
+May 13 07:21:58 jake ollama[684]: llama_kv_cache_init:  CUDA_Host KV buffer size =    48.00 MiB
+May 13 07:21:58 jake ollama[684]: llama_kv_cache_init:      CUDA0 KV buffer size =   720.00 MiB
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: KV self size  =  768.00 MiB, K (f16):  384.00 MiB, V (f16):  384.00 MiB
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model:  CUDA_Host  output buffer size =    68.62 MiB
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model:      CUDA0 compute buffer size =   185.06 MiB
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model:  CUDA_Host compute buffer size =    16.00 MiB
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: graph nodes  = 1060
+May 13 07:21:58 jake ollama[684]: llama_new_context_with_model: graph splits = 26
+May 13 07:21:58 jake ollama[684]: loading library /tmp/ollama599277715/runners/cuda_v11/libext_server.so
+May 13 07:21:58 jake ollama[684]: {"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140466293040704","timestamp":1715584918}
+May 13 07:21:58 jake ollama[684]: {"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140466293040704","timestamp":1715584918}
+May 13 07:21:58 jake ollama[684]: time=2024-05-13T07:21:58.711Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+May 13 07:21:58 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140466167215680","timestamp":1715584918}
+May 13 07:21:58 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584918}
+May 13 07:21:58 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":0,"n_past_se":0,"n_prompt_tokens_processed":25,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584918}
+May 13 07:21:58 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584918}
+May 13 07:22:00 jake ollama[684]: [GIN] 2024/05/13 - 07:22:00 | 200 |   2.25679943s |    192.168.2.61 | POST     "/api/generate"
+May 13 07:22:00 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":47,"n_ctx":2048,"n_past":46,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140466167215680","timestamp":1715584920,"truncated":false}
+May 13 07:22:14 jake ollama[684]: [GIN] 2024/05/13 - 07:22:14 | 200 |      27.332µs |    192.168.2.61 | HEAD     "/"
+May 13 07:22:14 jake ollama[684]: [GIN] 2024/05/13 - 07:22:14 | 200 |     371.937µs |    192.168.2.61 | POST     "/api/show"
+May 13 07:22:14 jake ollama[684]: {"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":25,"tid":"140466167215680","timestamp":1715584934}
+May 13 07:22:14 jake ollama[684]: {"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":13,"n_past_se":0,"n_prompt_tokens_processed":12,"slot_id":0,"task_id":25,"tid":"140466167215680","timestamp":1715584934}
+May 13 07:22:14 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":13,"slot_id":0,"task_id":25,"tid":"140466167215680","timestamp":1715584934}
+May 13 07:22:36 jake ollama[684]: {"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     331.77 ms /    12 tokens (   27.65 ms per token,    36.17 tokens per second)","n_prompt_tokens_processed":12,"n_tokens_second":36.16985363265897,"slot_id":0,"t_prompt_processing":331.768,"t_token":27.647333333333332,"task_id":25,"tid":"140466167215680","timestamp":1715584956}
+May 13 07:22:36 jake ollama[684]: {"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   21571.16 ms /   394 runs   (   54.75 ms per token,    18.27 tokens per second)","n_decoded":394,"n_tokens_second":18.265127222405876,"slot_id":0,"t_token":54.74913959390863,"t_token_generation":21571.161,"task_id":25,"tid":"140466167215680","timestamp":1715584956}
+May 13 07:22:36 jake ollama[684]: {"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   21902.93 ms","slot_id":0,"t_prompt_processing":331.768,"t_token_generation":21571.161,"t_total":21902.929,"task_id":25,"tid":"140466167215680","timestamp":1715584956}
+May 13 07:22:36 jake ollama[684]: {"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":419,"n_ctx":2048,"n_past":418,"n_system_tokens":0,"slot_id":0,"task_id":25,"tid":"140466167215680","timestamp":1715584956,"truncated":false}
+May 13 07:22:36 jake ollama[684]: [GIN] 2024/05/13 - 07:22:36 | 200 | 21.905954506s |    192.168.2.61 | POST     "/api/generate"
