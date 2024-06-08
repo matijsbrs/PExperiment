@@ -79,7 +79,7 @@ def get_summary(text):
   url = "http://192.168.2.61:11434/api/generate"
 
   payload = {
-    "model": "phi3", # mistral-openorca
+    "model": "gemma:2b", # mistral-openorca
     "prompt": prompt, 
     "system": systemPrompt,
     "stream": False

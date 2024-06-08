@@ -1,0 +1,4 @@
+question;response
+De lader ziet het voertuig niet zodra deze wordt aangesloten. Bij het aanbieden van de pas gaan de groene led branden maar daarna wordt er geen lading gestart;De kans is groot dat de verbindingen tussen de connector en het besturingsbord los zitten. Controleer deze en controleer ALLE! aarde bedrading.
+De lader wil niet verbinden met het netwerk en de tijd loopt niet gelijk;Stel handmatig de tijd in en laat de lader opnieuw verbinden.
+De lader reageert niet op een RFID kaart / tag / pas; controleer de kaartlezer/RFID reader. Er moet een klein groen lampje op branden en een piepje hoorbaar zijn. als dit niet het geval is dan is de kaartlezer waarschijnlijk defect.
