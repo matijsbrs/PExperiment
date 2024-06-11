@@ -11,9 +11,16 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
+from Markdown_loader_2 import parse_markdown
+
+import chromadb
+
+cclient = chromadb.PersistentClient()
+collection = cclient.get_or_create_collection("demo")
+# collection.add(ids=["1", "2", "3"], documents=["a", "b", "c"])
 
 # load the document and split it into chunks 
-def load_text_document(file_path):
+def load_text_document(file_path, persistent_client, collection_name="demo"):
     # load the document and split it into chunks
     loader = TextLoader(file_path)
     documents = loader.load()
@@ -21,15 +28,72 @@ def load_text_document(file_path):
     # split it into chunks
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
     docs = text_splitter.split_documents(documents)
-    return docs
+    # create the open-source embedding function
+    embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
-docs = load_text_document("demo.md")
+    # load it into Chroma
+    # db = Chroma.from_documents(docs, embedding_function)
+    db = Chroma(
+        client=persistent_client,
+        collection_name=collection_name,
+        embedding_function=embedding_function,
+    )
 
-# create the open-source embedding function
-embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+    collection = persistent_client.get_or_create_collection(collection_name)
+    for i, doc in enumerate(docs):
+        # print(f"Index: {i}, Document: {doc.page_content}")
+        collection.add(ids=[f"id{i}"], documents=[doc.page_content])
 
-# load it into Chroma
-db = Chroma.from_documents(docs, embedding_function)
+    return db
+
+def embed_from_markdown(file_path, persistent_client, collection_name="demo"):
+    # load the document and split it into chunks
+    chapters = parse_markdown(file_path)
+    embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+
+    # load it into Chroma
+    # db = Chroma.from_documents(docs, embedding_function)
+    db = Chroma(
+        client=persistent_client,
+        collection_name=collection_name,
+        embedding_function=embedding_function,
+    )
+
+    collection = persistent_client.get_or_create_collection(collection_name)
+    for element in chapters['chapters']:
+        chapter = element['chapter']
+        source = element['source']
+        tags = []
+        related = []
+        for tag in source['tags']:
+            tags.append({"tag": tag})
+        for rel in source['related']:
+            related.append({"related": rel})
+
+        metadata = [{
+            "name": source['name'],
+            "author": source['author'],
+            "date": source['date'],
+            "index": chapter['index'],
+        }]
+        
+
+        collection.add(
+            documents=[chapter['content']],
+            ids=[f"{source['name']}.{chapter['index']}"],
+            metadatas=metadata
+        )
+        # print(f"Chapter: {chapter}")
+        
+    return db
+ 
+
+
+# db = load_text_document("demo.md", cclient, "demo")
+db = embed_from_markdown("demo.md", cclient, "demo")
+
+# dbmd = embed_from_markdown("demo.md")
+
 # show the number of documents in the collection
 print("There are", db._collection.count(), "in the collection")
 
