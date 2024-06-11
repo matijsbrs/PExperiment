@@ -17,6 +17,9 @@ import chromadb
 
 cclient = chromadb.PersistentClient()
 collection = cclient.get_or_create_collection("demo")
+cclient.delete_collection("demo")
+collection = cclient.get_or_create_collection("demo")
+
 # collection.add(ids=["1", "2", "3"], documents=["a", "b", "c"])
 
 # load the document and split it into chunks 
@@ -98,11 +101,12 @@ db = embed_from_markdown("demo.md", cclient, "demo")
 print("There are", db._collection.count(), "in the collection")
 
 # query it
-query = "Wat zijn de top 3 kwaliteiten van matijs?"
-docs = db.similarity_search(query)
+query = "Beschrijf in het kort wat een Transformar is"
+# docs = db.similarity_search(query)
+docs = db.similarity_search_with_score(query)
 
 # prepare the llm model
-llm_mistral = ChatOllama(model="mistral:7b", temperature=0.3, max_tokens=200, base_url="http://192.168.2.61:11434")
+llm_mistral = ChatOllama(model="mistral:7b", temperature=0.3, max_tokens=400, base_url="http://192.168.2.61:11434")
 template = """
 Je bent een eersteklas onderzoeker. gespecialiseerd in het vinden van informatie over een onderwerp.
 Je krijgt een vraag van een student en je moet het antwoord geven op basis van de informatie die je hebt gevonden.
@@ -111,6 +115,7 @@ Je volgt ALLE onderstaande regels:
 1. Het antwoord moet zeer vergelijkbaar of zelfs identiek zijn aan de eerdere best practices, in termen van lengte, toon, logische argumenten en andere details.
 2. Als de best practices niet relevant zijn, probeer dan de stijl van de best practices na te bootsen in het bericht aan de monteur.
 3. Reageer in het Nederlands.
+4. Formateer de tekst netjes in Markdown.
 
 Hieronder staat de onderzoeksvraag:
 {query}
@@ -130,6 +135,21 @@ prompt = ChatPromptTemplate.from_template(template)
 # ####
 # \n""")
 
+# print the results from docs
+for doc in docs:
+    document, score = doc
+    print(f"""
+          
+content:
+{document.page_content}
+
+metadata:
+{document.metadata}
+
+score:
+{score}
+          """)
+
 # using langchain expressive language chain syntax
 # see: /docs/concepts/#langchain-expression-language-lcel
 
@@ -139,11 +159,16 @@ models = [
 
 for llm in models:
     chain = prompt | llm['model'] | StrOutputParser()
-    combined = "\n".join([doc.page_content for doc in docs])
+    
+    combined = "\n".join([doc[0].page_content for doc in docs])
     chain_query = {"query": query, "relavant_info": combined}
     print( f"""
 Result for model: {llm['name']}
-----
+++++ Bron data:
+{combined}
+++++
+
+---- Model response:
 {chain.invoke(chain_query)}
 ----
 """)
