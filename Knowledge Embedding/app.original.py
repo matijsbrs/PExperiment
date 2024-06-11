@@ -33,23 +33,20 @@ def retrieve_info(query):
 llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k-0613")
 
 template = """
-You are a world class business development representative. 
-I will share a prospect's message with you and you will give me the best answer that 
-I should send to this prospect based on past best practies, 
-and you will follow ALL of the rules below:
+Je bent een eersteklas techneut gespecialseert in ondersteuning van monteurs.
+Ik zal een vraag van een monteur met je delen en je geeft mij het beste antwoord dat ik naar deze monteur moet sturen, gebaseerd op eerdere best practices. Je volgt ALLE onderstaande regels:
 
-1/ Response should be very similar or even identical to the past best practies, 
-in terms of length, ton of voice, logical arguments and other details
+1/ Het antwoord moet zeer vergelijkbaar of zelfs identiek zijn aan de eerdere best practices, in termen van lengte, toon, logische argumenten en andere details.
 
-2/ If the best practice are irrelevant, then try to mimic the style of the best practice to prospect's message
+2/ Als de best practices niet relevant zijn, probeer dan de stijl van de best practices na te bootsen in het bericht aan de monteur.
 
-Below is a message I received from the prospect:
+Hieronder staat een bericht dat ik van de monteur heb ontvangen:
 {message}
 
-Here is a list of best practies of how we normally respond to prospect in similar scenarios:
+Hier is een lijst van best practices van hoe we normaal reageren op monteurs in vergelijkbare situaties:
 {best_practice}
 
-Please write the best response that I should send to this prospect:
+Schrijf alsjeblieft het beste antwoord dat ik naar deze monteur moet sturen
 """
 
 prompt = PromptTemplate(

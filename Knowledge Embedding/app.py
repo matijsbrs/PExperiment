@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_community.llms import Ollama
+from langchain_openai import OpenAI
 from langchain_community.embeddings import GPT4AllEmbeddings
 
 load_dotenv()
@@ -18,9 +19,18 @@ documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 all_splits = text_splitter.split_documents(documents)
 
-gpt4all_embd = GPT4AllEmbeddings()
+# model_name = "all-MiniLM-L6-v2.gguf2.f16.gguf"
+# gpt4all_kwargs = {'allow_download': 'True'}
+# embeddings = GPT4AllEmbeddings(
+#     model_name=model_name,
+#     gpt4all_kwargs=gpt4all_kwargs,    
+# )
+from langchain.embeddings.openai import OpenAIEmbeddings
 
-vectorstore = Chroma.from_documents(documents=all_splits, embedding=gpt4all_embd)
+embeddings = OpenAIEmbeddings()
+
+
+vectorstore = Chroma.from_documents(documents=all_splits, embedding=embeddings)
 
 # 2. Function for similarity search
 
@@ -37,7 +47,8 @@ def retrieve_info(query):
 
 # 3. Setup LLMChain & prompts
 # llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k-0613")
-llm = Ollama(model="qwen:0.5b", temperature=0.1, base_url="http://192.168.2.61:11434")
+# llm = Ollama(model="qwen:0.5b", temperature=0.1, base_url="http://192.168.2.61:11434")
+llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.1)
 
 template = """
 You are a world class business development representative. 
