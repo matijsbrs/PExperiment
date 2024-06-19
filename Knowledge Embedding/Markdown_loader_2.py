@@ -1,6 +1,8 @@
+from icecream import ic
 import json
 import re
 import yaml
+import re
 
 def parse_markdown_v2(filename, path=''):
     with open(filename, 'r') as file:
@@ -100,9 +102,14 @@ def parse_markdown(filename, path=''):
     with open(filename, 'r') as file:
         content = file.read()
     
-    metadata, markdown_content = content.split('---\n', 2)[1:]
-    metadata = yaml.safe_load(metadata)
-    
+    # check if the file has metadata using regex pattern '---'
+    if re.search(r'^---$', content, re.MULTILINE):
+        metadata, markdown_content = content.split('---\n', 2)[1:]
+        metadata = yaml.safe_load(metadata)
+    else:
+        metadata = { 'tags': [], 'related': [], 'author': '', 'date': ''}
+        markdown_content = content
+       
     source_info = {
         'source': {
             'type': 'file',
@@ -159,6 +166,9 @@ def parse_markdown(filename, path=''):
 
 
 # Save this script as markdown_to_json.py and run the following code:
+
 if __name__ == "__main__":
     json_output = json.dumps(parse_markdown('demo.md'), indent=4)
-    print(json_output)
+    # print(json_output)
+    print("-----------------")
+    ic(json_output)

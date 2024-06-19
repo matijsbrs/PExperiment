@@ -53,9 +53,6 @@ The Transformer architecture has demonstrated remarkable performance in various 
 * gemma
 * GPT
 
-
-
-
 ## Conclusion
 
 The history of LLMs and GPTs showcases the continuous advancements in language modeling and natural language processing. From the early days of statistical language modeling to the state-of-the-art GPT models, researchers have made significant progress in understanding and modeling language. LLMs and GPTs have revolutionized various applications and continue to push the boundaries of what is possible in natural language processing.

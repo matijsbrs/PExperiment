@@ -5,3 +5,5 @@ De lader reageert niet op een RFID kaart / tag / pas; controleer de kaartlezer/R
 De lader lijkt technisch in orde maar de lading wil niet starten, er gaat geen groene led knipperen/branden;Controleer of de lader verbonden is met de backend
 De lader verbind niet met de backend; Controleer de tijd, als deze niet klopt (meestal staat de tijd op 1 januari 1970) dan moet deze handmatig worden ingesteld of gebruik de timefix firmware file.
 De lader staat op 1970 en wil niet verbinden met de backend;Gebruik de timefix firmware file om de tijd te herstellen.  
+De lader heeft een defecte kilowatt uur meter van de netbeheerder (liander, stedin) en geeft rode leds;Meld de defecte meter in de app en stel de lader zo in dat de meter niet meer wordt uitgelezen. gebruik: configsetting: chargepoint.MRA.enabled=false, vergeet niet de lader te herstarten.
+De poort van een lader is onbeschikbaar, Controleer in de log of er meldingen staan over download van software. Als dit het geval is kan het zijn dat er een probleem is met het programmeren van de firmware van de poort.
