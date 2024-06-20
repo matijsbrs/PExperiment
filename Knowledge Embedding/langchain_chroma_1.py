@@ -4,6 +4,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,
 )
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
 from langchain_text_splitters import CharacterTextSplitter
 
@@ -14,7 +15,9 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from Markdown_loader_2 import parse_markdown
 
+import os
 import chromadb
+from icecream import ic
 
 class chromaStore:
     
@@ -36,30 +39,45 @@ class chromaStore:
 
     # load the document and split it into chunks 
     def load_text_document(self, file_path):
-        # load the document and split it into chunks
+        """
+        Load a text document into the database. and check if the document is already in the database.
+
+        Args:
+            file_path (str): The path to the text document.
+
+        Returns:
+            None
+
+        Raises:
+            None
+        """
         loader = TextLoader(file_path)
         documents = loader.load()
 
-        # split it into chunks
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
         docs = text_splitter.split_documents(documents)
-        # create the open-source embedding function
         embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
-        # load it into Chroma
-        # db = Chroma.from_documents(docs, embedding_function)
         self.db = Chroma(
             client=self.cclient,
             collection_name=self.collectionName,
             embedding_function=embedding_function,
         )
 
-        collection = self.cclient.get_or_create_collection(self.collectionName)
-        for i, doc in enumerate(docs):
-            # print(f"Index: {i}, Document: {doc.page_content}")
-            collection.add(ids=[f"id{i}"], documents=[doc.page_content])
-
-        return self.db
+        collection = self.collection
+        file_hash = self.compute_file_hash(file_path)
+        existing_docs = collection.get_documents({"file_hash": file_hash})
+        
+        if existing_docs:
+            print(f"File {file_path} is already in the database. Skipping.")
+            return
+        
+        print(f"File {file_path} is not in the database. Adding.")
+        for doc in docs:
+            doc["metadata"]["file_path"] = file_path
+            doc["metadata"]["file_hash"] = file_hash
+            doc["metadata"]["file_name"] = os.path.basename(file_path)
+            collection.add_documents(documents=[doc])
 
     def embed_from_markdown(self, file_path):
         # load the document and split it into chunks
@@ -106,15 +124,24 @@ class chromaStore:
     def similarity_search_with_score(self, query):
         return self.db.similarity_search_with_score(query)
     
+    def filter_documents_by_metadata(self, metadata_filter):
+        return self.collection.get_documents(metadata_filter)
+
+    def similarity_search_with_filters(self, query, num_results=3, metadata_filter=None):
+        docs = self.similarity_search(query, num_results)
+        
+        if metadata_filter:
+            docs = [doc for doc in docs if all(item in doc['metadata'].items() for item in metadata_filter.items())]
+        return docs
+
     def similarity_search(self, query, n_results=10):
         return self.collection.query(
             query_texts=[f"{query}"],
             n_results=n_results,
+            # include=["distances"],
             # where={"metadata_field": "is_equal_to_this"},
             # where_document={"$contains":"search_string"}
         )
-
-
     
     def show_docs(self, docs):
         # print the results from docs
@@ -131,6 +158,10 @@ class chromaStore:
         # {document.metadata}
 
         # """)
+
+    def embed_text(self, text):
+        embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+        return embedding_function.embed_query(text)
 
     def ai_result(self, query, docs):
         # prepare the llm model
@@ -168,6 +199,7 @@ class chromaStore:
         
         chain = prompt | llm | StrOutputParser()
         # combined = "\n".join([doc[0].page_content for doc in docs])
+        
         combined = "\n".join([doc for doc in docs['documents'][0]])
         sources = ""
         for source in docs['metadatas'][0]:
