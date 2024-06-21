@@ -16,25 +16,40 @@ def generate_response(message: str, filters: dict):
     docs = store.similarity_search_with_filters(message, 10, filters)
     query_embedding = store.embed_text(message)
     
+    # ic(docs)
     scored_docs = []
-    for index, doc in enumerate(docs): 
+    print("size: ", len(docs['distances'][0]))
+    for doc in range(0,len(docs['distances'][0])):
         # similarity_score = calculate_cosine_similarity(query_embedding, doc_embedding)
-        scored_docs.append((doc, docs['distances'][0][index]))
+        #scored_docs.append((doc, docs['distances'][0][index]))
+        scored_doc = {
+            "content": docs['documents'][0][doc],
+            "distance": docs['distances'][0][doc],
+            "metadata": docs['metadatas'][0][doc],
+            "ids": docs['ids'][0][doc]
+        }
+        print(f"distance: {scored_doc['distance']}")
+        scored_docs.append(scored_doc)
     
-    scored_docs.sort(key=lambda x: x[1], reverse=True)
-    top_docs = [doc for doc, score in scored_docs[:3]]
-    ic(top_docs)
+    
+    # scored_docs.sort(key=lambda doc: doc['distance'])
+    # top_docs = [doc for doc in scored_docs[:3]]
+    top_docs = scored_docs[:3]
+    # ic(scored_docs)
     if not top_docs:
         return {"response": "No relevant documents found.", "resources": []}
     
     result = store.ai_result(message, top_docs)
-    used_resources = [doc['metadata']['file_path'] for doc in top_docs]
+    used_resources = [doc['metadata'] for doc in top_docs]
     
-    return {"response": result['response'], "resources": used_resources, "documents": top_docs}
+    response = {"response": result['response'], "resources": used_resources, "documents": top_docs}
+    ic(response)
+    # print(f"response: {response}")
+    return response
 
 def main():
-    st.set_page_config(page_title="Customer response generator", page_icon=":bird:")
-    st.header("Customer response generator :bird:")
+    st.set_page_config(page_title="Customer response generator", page_icon=":rocket:")
+    st.header("Customer response generator :rocket:")
     
     message = st.text_area("Customer message")
     
@@ -58,13 +73,13 @@ def main():
         for resource in result['resources']:
             st.write(resource)
         
-        st.write("Detailed Document Information:")
-        for doc in result['documents']:
-            file_path = doc['metadata']['file_path']
-            st.write(f"File Path: {file_path}")
-            st.write(f"Metadata: {doc['metadata']}")
-            st.write(f"[Open Document](http://localhost:8502/?file={file_path})")  # Link naar het aparte Streamlit-bestand
-            st.write("---")
+        # st.write("Detailed Document Information:")
+        # for doc in result:
+        #     # file_path = doc['metadata']['name']
+        #     # st.write(f"File Path: {file_path}")
+        #     # st.write(f"Metadata: {doc['metadata']}")
+        #     # st.write(f"[Open Document](http://localhost:8502/?file={file_path})")  # Link naar het aparte Streamlit-bestand
+        #     st.write("---")
 
 if __name__ == '__main__':
     store = chromaStore("demo")

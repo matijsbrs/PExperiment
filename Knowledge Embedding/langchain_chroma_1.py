@@ -199,11 +199,19 @@ class chromaStore:
         
         chain = prompt | llm | StrOutputParser()
         # combined = "\n".join([doc[0].page_content for doc in docs])
-        
-        combined = "\n".join([doc for doc in docs['documents'][0]])
+
+        combined = "\n".join([doc['content'] for doc in docs])
+        # combined = ""
+        # for doc in docs['documents']:
+        #     combined += doc['content']
+
+        # ic(docs)
+        # combined = "combi!"
+
         sources = ""
-        for source in docs['metadatas'][0]:
-            sources += f"* {source['name']} - {source['index']} \n"
+        for source in docs:
+            sources += f"* {source['metadata']['name']} - {source['metadata']['index']} \n"
+            # sources += f"* {source['name']} - {source['index']} \n"
 
 
         chain_query = {"query": query, "relavant_info": combined, "sources": sources}
